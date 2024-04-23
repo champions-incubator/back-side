@@ -37,7 +37,7 @@ export class LoginUseCase implements ICommandHandler<LoginCommand> {
     await this.commandBus.execute(
       new CreateDeviceCommand(payload, ip, userAgent),
     );
-      //// dskgksd
+
     res.cookie('refreshToken', signedToken, {
       httpOnly: true,
       secure: true,
